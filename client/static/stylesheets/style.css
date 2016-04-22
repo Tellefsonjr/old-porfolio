@@ -4,11 +4,9 @@
 
 body {
   padding-bottom: 50px;
-  /*padding-top: 50px;*/
-  color: #5a5a5a;
 }
-
-.panel{
+#target-contact{
+  margin-top:300px;
 }
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -29,6 +27,7 @@ body {
 .container-fluid{
   padding-right:0px;
   padding-left:0px;
+  margin-bottom: 60px;
 }
 .navbar-wrapper > .container {
   padding-right: 0;
@@ -169,4 +168,16 @@ body {
 .footer > li{
   float: none;
   display: inline-block;
+}
+.raise{
+  border-radius: 4px 4px 4px 4px;
+  background-color: rgba(0, 0, 0, 0.40);
+}
+.carousel-caption{
+  text-shadow: 2px 2px 4px black;
+}
+#main{
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
 }

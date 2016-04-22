@@ -28,7 +28,7 @@
 <!-- NAVBAR
 ================================================== -->
   <body class="container-fluid">
-    <div class="navbar-wrapper">
+    <div class="navbar-wrapper" id="target-about">
       <nav class="navbar navbar-inverse navbar-fixed-top">
 
             <div class="container nav-container">
@@ -43,15 +43,16 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav pull-right">
-                <li><a href="https:/www.github.com/tellefsonjr"><span class="fa fa-github"></span> GitHub </a></li>
-                <li><a href="#"><span class="fa fa-linkedin"></span> LinkedIn </a></li>
-                <li><a href="#contact"><span class="fa fa-facebook"></span> Facebook </a></li>
+                <li><a href="mailto:timmeyellefson@gmail.com"><span class="fa fa-envelope"></span> E-mail</a></li>
+                <li><a href="https://www.github.com/tellefsonjr"><span class="fa fa-github"></span> GitHub </a></li>
+                <li><a href="https://www.linkedin.com/in/timmey-ellefson-05b085117?trk=nav_responsive_tab_profile"><span class="fa fa-linkedin"></span> LinkedIn </a></li>
+                <li><a href="https://www.facebook.com/timmey.ellefson.9"><span class="fa fa-facebook"></span> Facebook </a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="fa fa-bars"></span> <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact Me</a></li>
+                    <li><a href="#target-about">About</a></li>
+                    <li><a href="#target-projects">Projects</a></li>
+                    <li><a href="#target-contact">Contact Me</a></li>
                   </ul>
                 </li>
               </ul>
@@ -60,71 +61,21 @@
         </nav>
 
       </div>
+      <div>
 
+          <div class="container container-fluid" id="main">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
 
-    <!-- Carousel
-    ================================================== -->
-  <div class="panel about" data-section-name="home" height="auto">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
-          <div class="container container-fluid">
-            <div class="carousel-caption">
               <img class="img-circle profile-pic" src="https://instagram.fsnc1-1.fna.fbcdn.net/t51.2885-19/s150x150/11925539_1608844229367743_1654116862_a.jpg" alt="Timmey.jpg" width="150" height="150">
               <p>Hello! My name is Timmey Ellefson, and I'm a Junior Full-Stack Developer. Recently graduated from Coding Dojo San Jose's 3-Month Onsite Flex Bootcamp and am extremely eager to contribute and further my skills with a development team.</p>
-              <p>I have a diverse set of skills, ranging from front-end design with HTML + CSS + Javascript, Full MEAN Stack, Ruby on Rails, Python, Database Structures based on both SQL and no-SQL, along with my prior experience in Retail Management and Customer Service.</p>
-              <p><a class="btn btn-lg btn-primary" href="/resume" role="button">My Resumé</a></p>
+              <p>I have a diverse set of skills, ranging from front-end design with HTML + CSS + Javascript, Full MEAN Stack, Ruby on Rails, Python, Database Structures based on both SQL and no-SQL, hosting webservers with Amazon Web Services and Heroku, along with my prior experience in Retail Management and Customer Service.</p>
+              <p><a class="btn btn-lg btn-primary" href="./images/resume.docx" role="button">My Resumé</a></p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="item">
-          <img class="second-slide" src="./images/Dojo_Gram_Screenshot.jpg" height="500px" width="1575px" alt="Second slide">
-          <div class="container container-fluid">
-            <div class="carousel-caption">
-              <h1>DojoGram</h1>
-              <p>A light-weight social media app that uses Passport.js for user authentication, allows users to post, comment and like pictures and follow or unfollow users using the full MEAN stack.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button" id="dojo_btn">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
-          <div class="container container-fluid">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img class="fourth-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Fourth slide">
-          <div class="container container-fluid">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel -->
+
 
 
     <!-- Marketing messaging and featurettes
@@ -135,23 +86,23 @@
 
       <!-- Three columns of text below the carousel -->
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-lg-push-2">
           <img class="img-circle" src="https://d3q6qq2zt8nhwv.cloudfront.net/courseproxy/f0482ddda0944360bd512da19a7d8924.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>MEAN</h2>
           <p>With the MEAN stack I have integrated technologies including user authentication with passport.js, no-SQL database structures with MongoDB, handling http-requests, and using RESTful Routes. With these tools I created a familiar social media web-app that allows users to register, log in, post, comment, like picture, and follow or unfollow users.</p>
-          <p><a class="btn btn-default" href="http://54.200.64.67/#/home" role="button">View MEAN Project &raquo;</a></p>
+          <p><a class="btn btn-default" href="http://54.200.64.67/" role="button">View MEAN Project &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <!-- <div class="col-lg-4">
           <img class="img-circle" src="https://www.tibus.com/media/1079/ruby_on_rails-logo.png" alt="Generic placeholder image" width="140" height="140">
           <h2>Ruby on Rails</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p><a class="btn btn-default" href="#" role="button">View ROR Project &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        </div><! /.col-lg-4 -->
+        <div class="col-lg-4 col-lg-push-2">
           <img class="img-circle" src="http://www.learnlyve.com/wp-content/uploads/2015/07/python-logo-master.png" alt="Generic placeholder image" width="140" height="140">
           <h2>Python</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View Python Project &raquo;</a></p>
+          <p>Using Python, I have built a simple webApp called GifParty that allows users to register and log in using a MySql Database, beautified with Bootstrap, uses the Pylot MVC Framework, and jQuery to make AJAX calls to both Giphy and SoundCloud's API to create a fun visualizer and media player.</p>
+          <p><a class="btn btn-default" href="https://github.com/tellefsonjr/GifParty" role="button">View Python Project &raquo;</a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
     </div>
@@ -161,7 +112,7 @@
       <!-- START THE FEATURETTES -->
 
 <div class="panel project1" data-section-name="project1" id="dojo_gram_feature" height="auto">
-      <div class="row featurette">
+      <div class="row featurette" id="target-projects">
         <div class="col-md-7">
           <h2 class="featurette-heading">DojoGram<span class="text-muted"> A Single-Page Social Media App</span></h2>
           <p class="lead">With social media encompassing a huge part in everyone's lives, I decided to demonstrate my ability to form a simple, fluid social media app. I believe the MEAN Stack handles social media best with its single-page aesthetic giving the user zero load time when navigating through the app. This app uses Passport.js for user authentication and Bootstrap's mobile-friendly scaling allows easy access to this site.</p>
@@ -171,58 +122,54 @@
           <div id="DojoGramCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
+              <li data-target="#DojoGramCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#DojoGramCarousel" data-slide-to="1"></li>
+              <li data-target="#DojoGramCarousel" data-slide-to="2"></li>
+              <li data-target="#DojoGramCarousel" data-slide-to="3"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
               <div class="item active">
-                <img class="first-slide" src="./images/Dojo_Gram_Screenshot.jpg" height="500px" width="1575px" alt="Second slide">
+                <img class="first-slide" src="./images/Dojo_Gram_Screenshot.jpg" height="500px" width="1575px" alt="First slide">
                 <div class="container container-fluid">
                   <div class="carousel-caption">
                     <h1>DojoGram</h1>
                     <p>A light-weight social media app that uses Passport.js for user authentication, allows users to post, comment and like pictures and follow or unfollow users using the full MEAN stack.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button" id="dojo_btn">Learn more</a></p>
+                    <p><a class="btn btn-lg btn-primary" href="http://54.200.64.67" role="button" id="dojo_btn">Visit DojoGram</a></p>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+                <img class="second-slide" src="./images/Dojo_Gram_Screenshot2.jpg" height="500px" width="1575px" alt="Second slide">
                 <div class="container container-fluid">
                   <div class="carousel-caption">
-                    <p>1</p>
-                    <p></p>
+                    <p>Login and Registration utilized with Passport.js.</p>
                   </div>
                 </div>
               </div>
               <div class="item">
-                <img class="third-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+                <img class="third-slide" src="./images/Dojo_Gram_Screenshot3.jpg" height="500px" width="1575px" alt="Third slide">
                 <div class="container container-fluid">
                   <div class="carousel-caption">
-                    <h1>One more for good measure.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    <p class="raise">Here, users can edit their profile.</p>
+
                   </div>
                 </div>
               </div>
               <div class="item">
-                <img class="fourth-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Fourth slide">
+                <img class="fourth-slide" src="./images/Dojo_Gram_Screenshot4.jpg" height="500px" width="1575px" alt="Fourth slide">
                 <div class="container container-fluid">
                   <div class="carousel-caption">
-                    <h1>One more for good measure.</h1>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    <p>Users can see all their followers and visit their profiles from here.</p>
                   </div>
                 </div>
               </div>
             </div>
             <a class="left carousel-control" href="#DojoGramCarousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="fa fa-chevron-left" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
             </a>
             <a class="right carousel-control" href="#DojoGramCarousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="fa fa-chevron-right" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
             </a>
           </div>
@@ -232,22 +179,58 @@
     <div class="panel project2" data-section-name="project2" height="auto">
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">GifParty<span class="text-muted"> A Media Player and Visualizer</span></h2>
+          <p class="lead">If you're ever hosting a party and need something both visually and aurally fun to play in the background, check out GifParty! Here, I used both Giphy and Soundcloud's API to let users choose what genres they want to listen to, and what gif's they want to see play
+          in the background! GifParty is built with Python and the Pylot MVC as its framework to login and register users, although not much more functionality is built with it yet, as I develop this webApp I plan to store users' searches and be able to play back certain playlists/gif searches.</p>
+          <p class="text-muted">Unfortunately, GifParty is not live at the moment; however, if you'd like to check out the source code you can find it <a href="https://github.com/tellefsonjr/GifParty">here.</a></p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-    </div>
-    <div class="panel project2" data-section-name="project2" height="auto">
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <div id="GifPartyCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#GifPartyCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#GifPartyCarousel" data-slide-to="1"></li>
+              <li data-target="#GifPartyCarousel" data-slide-to="2"></li>
+              <li data-target="#GifPartyCarousel" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img class="first-slide" src="./images/Gif_Party_Gif.gif" height="500px" width="1575px" alt="First slide">
+                <div class="container container-fluid">
+                  <div class="carousel-caption">
+                    <h1>GifParty</h1>
+                    <p>A simple Python application that allows users to login and enjoy their favorite music genres played on a SoundCloud player while watching hilarious Giphy gifs play in the background.</p>
+                    <p><a class="btn btn-lg btn-primary" href="https://github.com/tellefsonjr/GifParty" role="button" id="gifp_btn">See it on Git</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img class="second-slide" src="./images/Gif_Party_Screenshot.jpg" height="500px" width="1575px" alt="Second slide">
+                <div class="container container-fluid">
+                  <div class="carousel-caption">
+                    <p>Login and Registration, styling done with bootstrap and is mobile-friendly.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img class="third-slide" src="./images/Gif_Party_Screenshot2.jpg" height="500px" width="1575px" alt="Third slide">
+                <div class="container container-fluid">
+                  <div class="carousel-caption">
+                    <p class="raise">Here, users select which genre they'd like to hear, and search via Giphy which gif's they'd like to play in the background.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#GifPartyCarousel" role="button" data-slide="prev">
+              <span class="fa fa-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#GifPartyCarousel" role="button" data-slide="next">
+              <span class="fa fa-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -255,12 +238,14 @@
 
 
       <!-- FOOTER -->
-      <div class="panel contact" data-section-name="z">
+      <div class="panel contact" id="target-contact">
           <div class="col-md-8 col-md-offset-2">
             <h2>Contact Me</h2>
             <p class="lead">I'm available to freelance or full-time employment, </br> so if you have any opportunities that suit my skills - let's get in touch.</br> <a href="mailto:timmeyellefson@gmail.com">timmeyellefson@gmail.com</a></p>
             <ul class="footer">
-              <li><a href="https:/www.github.com/tellefsonjr"><span class="fa fa-github"></span></a></li>
+              <li><a href="https://www.github.com/tellefsonjr"><span class="fa fa-github"></span></a></li>
+              <li><a href="https://www.linkedin.com/in/timmey-ellefson-05b085117?trk=nav_responsive_tab_profile"><span class="fa fa-linkedin"></span></a></li>
+              <li><a href="https://www.facebook.com/timmey.ellefson.9"><span class="fa fa-facebook"></span></a></li>
             </ul>
 
           </div>
@@ -272,7 +257,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="./js/vendor/jquery.min.js"><\/script>')
     </script>
-    <script src="./js/jquery.scrollify.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
 
